@@ -1,0 +1,190 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/main.css")
+        script(src="js/scripts.js")
+        title DropBox
+
+ 
+    - let files = [{ name: 'dropbox logo.jpg', date: 'Jul 22', size: '110.2 KB', image: 'img/files/1.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere tempore ea totam quas minima voluptate consectetur enim ab qui repellat.', selected: true, uploading: false }, { name: 'contact.jpg', date: 'Jul 14', size: '245.35 KB', image: 'img/files/2.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: true, uploading: false }, { name: 'Olimp006.psd', date: 'Apr 11', size: '7.2 MB', image: 'img/files/3.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Sweet pixels icon.jpg', date: 'Mar 5', size: '500.76 KB', image: 'img/files/4.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Sweet pixels icon.jpg', date: 'Mar 5', size: '500.76 KB', image: 'img/files/5.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: true }, { name: 'Icon Set.jpg', date: 'Sep 26', size: '222.02 KB', image: 'img/files/6.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'instagram.jpg', date: 'Aug 14', size: '260 KB', image: 'img/files/7.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Pin Art Dribbble.jpg', date: 'Dec 13', size: '450 KB', image: 'img/files/8.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Iron-Man-Mask.jpg', date: 'Feb 23', size: '245.2 KB', image: 'img/files/9.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: true }, { name: 'Warehouse desing.png', date: 'Oct 05', size: '1.2 MB', image: 'img/files/10.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Magic Bacon Ride.jpg', date: 'Sep 06', size: '150 KB', image: 'img/files/11.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Mobile Portfolio.jpg', date: 'Dec 14', size: '500.65 KB', image: 'img/files/12.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Facebook button.jpg', date: 'Dec 19', size: '245.2 KB', image: 'img/files/13.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'Web Design.jpg', date: 'Jun 23', size: '982.2 KB', image: 'img/files/14.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false }, { name: 'dribbble fun.jpg', date: 'Oct 05', size: '50.2 KB', image: 'img/files/15.png', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere', selected: false, uploading: false } ]
+    body
+        .root
+            .header 
+                .header__logo 
+                    img(src="img/Header/Dropbox Logo.png", alt="")
+                .header__inner
+                    form 
+                        input.search( type="text" placeholder="Type to Search")
+                    .header__nav
+                        .header__item.button
+                            img.button__img(src="img/Header/Upgrade Box icon.png", alt="")
+                            .button__title Upgrade account
+                                .button__subtitle Pay 10$, Yearly
+                        .header__item.button
+                            img.button__img(src="img/Header/User.png", alt="")
+                            .button__title Tim Van Damme
+                                .button__subtitle Normal user
+                        .header__item.button(id="button-settings")
+                            img.button__img(src="img/Header/Setting Icon.png", alt="")
+                        .header__item.button(id="button-notifications")
+                            img.button__img(src="img/Header/Notifaction Icon.png", alt="")          
+            .main 
+                .side  
+                    .side__section.section
+                        .section__header Main
+                        .section__list
+                            .section__item.button
+                                img.button__img(src="img/Side/File Icon.png", alt="") 
+                                .button__title Files
+                            .section__item.button
+                                img.button__img(src="img/Side/Photo Icon.png", alt="") 
+                                .button__title Photos
+                            .section__item.button
+                                img.button__img(src="img/Side/Share Icon.png", alt="") 
+                                .button__title Sharing
+                            .section__item.button
+                                img.button__img(src="img/Side/Link Icon.png", alt="") 
+                                .button__title Links
+                            .section__item.button
+                                img.button__img(src="img/Side/Calender Icon.png", alt="") 
+                                .button__title Events     
+
+                    .side__section.section
+                        .section__header Also from Dropbox
+                        .section__list
+                            .section__item.button
+                                img.button__img(src="img/Side/Carousel Icon.png", alt="") 
+                                .button__title Carousel
+                            .section__item.button
+                                img.button__img(src="img/Side/Mailbox Icon.png", alt="") 
+                                .button__title Mailbox    
+
+                    .side__section.section
+                        .section__header Lables
+                        .section__list
+                            .section__item.button
+                                img.button__img(src="img/Side/CircleDesign.png", alt="") 
+                                .button__title Design
+                            .section__item.button
+                                img.button__img(src="img/Side/CircleWebElements.png", alt="") 
+                                .button__title Web Elements     
+                            .section__item.button
+                                img.button__img(src="img/Side/CircleMobile.png", alt="") 
+                                .button__title Mobile    
+                            .section__item.button
+                                img.button__img(src="img/Side/CircleApp.png", alt="") 
+                                .button__title Application                                    
+                            .section__item.button
+                                img.button__img(src="img/Side/CircleUI.png", alt="") 
+                                .button__title UI/UX                         
+                .explorer
+                    .explorer__controls
+                        .file-controls
+                            .button
+                                img.button__img(src="img/top-nav/Upload Icon.png", alt="") 
+                                .button__title Upload
+                            .button(id="buttonNewFolder")
+                                img.button__img( src="img/top-nav/Folder Icon.png", alt="") 
+                                .button__title New Folder
+                            .button
+                                img.button__img(src="img/top-nav/Share Folder Icon.png", alt="") 
+                                .button__title Share a Folder
+                            .button
+                                img.button__img(src="img/top-nav/Trash Icon.png", alt="") 
+                                .button__title Trash                                        
+                            .selected-count You have 
+                                span 2 
+                                |  selected items
+                        .file-view-controls
+                            .file-view-controls__button.button.file-view-controls__button_active(id="button-thumb-view")
+                                svg.button__img(width="16px" height="16px")
+                                    path(fill-rule="evenodd"  fill="rgb(103, 103, 103)" d="M14.000,16.000 L2.000,16.000 C0.895,16.000 -0.000,15.104 -0.000,13.999 L-0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 L14.000,-0.000 C15.105,-0.000 16.000,0.895 16.000,2.000 L16.000,13.999 C16.000,15.104 15.105,16.000 14.000,16.000 ZM14.000,3.000 C14.000,2.447 13.552,2.000 13.000,2.000 L3.000,2.000 C2.448,2.000 2.000,2.447 2.000,3.000 L2.000,13.000 C2.000,13.552 2.448,13.999 3.000,13.999 L13.000,13.999 C13.552,13.999 14.000,13.552 14.000,13.000 L14.000,3.000 ZM11.000,12.000 L10.000,12.000 C9.448,12.000 9.000,11.552 9.000,11.000 L9.000,10.000 C9.000,9.447 9.448,9.000 10.000,9.000 L11.000,9.000 C11.552,9.000 12.000,9.447 12.000,10.000 L12.000,11.000 C12.000,11.552 11.552,12.000 11.000,12.000 ZM11.000,7.000 L10.000,7.000 C9.448,7.000 9.000,6.552 9.000,6.000 L9.000,5.000 C9.000,4.448 9.448,4.000 10.000,4.000 L11.000,4.000 C11.552,4.000 12.000,4.448 12.000,5.000 L12.000,6.000 C12.000,6.552 11.552,7.000 11.000,7.000 ZM6.000,12.000 L5.000,12.000 C4.448,12.000 4.000,11.552 4.000,11.000 L4.000,10.000 C4.000,9.447 4.448,9.000 5.000,9.000 L6.000,9.000 C6.552,9.000 7.000,9.447 7.000,10.000 L7.000,11.000 C7.000,11.552 6.552,12.000 6.000,12.000 ZM6.000,7.000 L5.000,7.000 C4.448,7.000 4.000,6.552 4.000,6.000 L4.000,5.000 C4.000,4.448 4.448,4.000 5.000,4.000 L6.000,4.000 C6.552,4.000 7.000,4.448 7.000,5.000 L7.000,6.000 C7.000,6.552 6.552,7.000 6.000,7.000 Z")        
+                            .file-view-controls__button.button(id="button-list-view")
+                                svg.button__img(width="16px" height="16px")
+                                    path(fill-rule="evenodd"  fill="rgb(103, 103, 103)" d="M14.000,16.000 L2.000,16.000 C0.895,16.000 -0.000,15.104 -0.000,13.999 L-0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 L14.000,-0.000 C15.105,-0.000 16.000,0.895 16.000,2.000 L16.000,13.999 C16.000,15.104 15.105,16.000 14.000,16.000 ZM14.000,3.000 C14.000,2.447 13.552,2.000 13.000,2.000 L3.000,2.000 C2.448,2.000 2.000,2.447 2.000,3.000 L2.000,13.000 C2.000,13.552 2.448,13.999 3.000,13.999 L13.000,13.999 C13.552,13.999 14.000,13.552 14.000,13.000 L14.000,3.000 ZM11.500,12.000 L4.500,12.000 C4.224,12.000 4.000,11.776 4.000,11.500 L4.000,10.500 C4.000,10.223 4.224,10.000 4.500,10.000 L11.500,10.000 C11.776,10.000 12.000,10.223 12.000,10.500 L12.000,11.500 C12.000,11.776 11.776,12.000 11.500,12.000 ZM11.500,9.000 L4.500,9.000 C4.224,9.000 4.000,8.776 4.000,8.500 L4.000,7.500 C4.000,7.223 4.224,7.000 4.500,7.000 L11.500,7.000 C11.776,7.000 12.000,7.223 12.000,7.500 L12.000,8.500 C12.000,8.776 11.776,9.000 11.500,9.000 ZM11.500,6.000 L4.500,6.000 C4.224,6.000 4.000,5.776 4.000,5.500 L4.000,4.500 C4.000,4.223 4.224,4.000 4.500,4.000 L11.500,4.000 C11.776,4.000 12.000,4.223 12.000,4.500 L12.000,5.500 C12.000,5.776 11.776,6.000 11.500,6.000 Z")
+                            .file-view-controls__button.button(id="button-detail-view")
+                                svg.button__img(width="16px" height="16px")
+                                    path(fill-rule="evenodd"  fill="rgb(103, 103, 103)" d="M14.000,16.000 L2.000,16.000 C0.895,16.000 -0.000,15.104 -0.000,13.999 L-0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 L14.000,-0.000 C15.104,-0.000 16.000,0.895 16.000,2.000 L16.000,13.999 C16.000,15.104 15.104,16.000 14.000,16.000 ZM14.000,3.000 C14.000,2.447 13.552,2.000 13.000,2.000 L3.000,2.000 C2.448,2.000 2.000,2.447 2.000,3.000 L2.000,13.000 C2.000,13.552 2.448,13.999 3.000,13.999 L13.000,13.999 C13.552,13.999 14.000,13.552 14.000,13.000 L14.000,3.000 ZM11.500,12.000 L8.500,12.000 C8.224,12.000 8.000,11.776 8.000,11.500 L8.000,10.500 C8.000,10.223 8.224,10.000 8.500,10.000 L11.500,10.000 C11.776,10.000 12.000,10.223 12.000,10.500 L12.000,11.500 C12.000,11.776 11.776,12.000 11.500,12.000 ZM11.500,9.000 L8.500,9.000 C8.224,9.000 8.000,8.776 8.000,8.500 L8.000,7.500 C8.000,7.223 8.224,7.000 8.500,7.000 L11.500,7.000 C11.776,7.000 12.000,7.223 12.000,7.500 L12.000,8.500 C12.000,8.776 11.776,9.000 11.500,9.000 ZM11.500,6.000 L8.500,6.000 C8.224,6.000 8.000,5.776 8.000,5.500 L8.000,4.500 C8.000,4.223 8.224,4.000 8.500,4.000 L11.500,4.000 C11.776,4.000 12.000,4.223 12.000,4.500 L12.000,5.500 C12.000,5.776 11.776,6.000 11.500,6.000 ZM5.500,12.000 L4.500,12.000 C4.224,12.000 4.000,11.776 4.000,11.500 L4.000,10.500 C4.000,10.223 4.224,10.000 4.500,10.000 L5.500,10.000 C5.776,10.000 6.000,10.223 6.000,10.500 L6.000,11.500 C6.000,11.776 5.776,12.000 5.500,12.000 ZM5.500,9.000 L4.500,9.000 C4.224,9.000 4.000,8.776 4.000,8.500 L4.000,7.500 C4.000,7.223 4.224,7.000 4.500,7.000 L5.500,7.000 C5.776,7.000 6.000,7.223 6.000,7.500 L6.000,8.500 C6.000,8.776 5.776,9.000 5.500,9.000 ZM5.500,6.000 L4.500,6.000 C4.224,6.000 4.000,5.776 4.000,5.500 L4.000,4.500 C4.000,4.223 4.224,4.000 4.500,4.000 L5.500,4.000 C5.776,4.000 6.000,4.223 6.000,4.500 L6.000,5.500 C6.000,5.776 5.776,6.000 5.500,6.000 Z")                    
+                    hr
+                    .files-view.files-view_type_thumb
+                        each file in files 
+                            div(class=(file.selected ? 'file file_selected' : file.uploading ? 'file file_uploading' : 'file' ))
+                                .file__img
+                                    img(src=file.image, alt="")
+                                    .file__upload-icon 
+                                        svg(width="85px" height="75px" viewBox="0 0 100 100" enable-background="new 0 0 100 100")
+                                            path(fill="#ffffff" d="M69.271,42.085c-5.941-7.138-11.883-14.276-17.824-21.414C51.01,20.147,50.496,19.956,50,19.99  c-0.496-0.034-1.011,0.157-1.447,0.681c-5.941,7.137-11.883,14.276-17.824,21.414c-1.1,1.319-0.461,3.494,1.446,3.494  c2.494,0,4.986,0,7.479,0c0,10.795,0,21.59,0,32.386c0,1.116,0.931,2.047,2.047,2.047c5.531,0,11.064,0,16.598,0  c1.116,0,2.047-0.931,2.047-2.047c0-10.796,0-21.591,0-32.386c2.493,0,4.985,0,7.479,0C69.732,45.579,70.371,43.404,69.271,42.085z")
+                                            path(fill="#ffffff" d="M50,0C22.386,0,0,22.386,0,50s22.386,50,50,50s50-22.386,50-50S77.614,0,50,0z M50,92C26.804,92,8,73.195,8,50  C8,26.804,26.804,8,50,8c23.195,0,42,18.804,42,42C92,73.195,73.195,92,50,92z")
+                                    .file__selected-icon 
+                                        svg(x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="22px" height="22px")
+                                            path(fill="#a0d468" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z")
+                                            path(fill="#ffffff" d="M34.602,14.602L21,28.199l-5.602-5.598l-2.797,2.797L21,33.801l16.398-16.402L34.602,14.602z")
+                                .file__description
+                                    .file__name= file.name
+                                    span.file__date= file.date
+                                        | , 
+                                        span.file__size= file.size
+                                    .file__text= file.description
+                                .file__dropdown.dropdown
+                                    svg.dropdown__icon(width="26px" height="6px")
+                                        path(fill-rule="evenodd"  fill="rgb(213, 213, 213)" d="M23.000,6.000 C21.343,6.000 20.000,4.657 20.000,3.000 C20.000,1.343 21.343,-0.000 23.000,-0.000 C24.657,-0.000 26.000,1.343 26.000,3.000 C26.000,4.657 24.657,6.000 23.000,6.000 ZM13.000,6.000 C11.343,6.000 10.000,4.657 10.000,3.000 C10.000,1.343 11.343,-0.000 13.000,-0.000 C14.657,-0.000 16.000,1.343 16.000,3.000 C16.000,4.657 14.657,6.000 13.000,6.000 ZM3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 Z")
+                                    .dropdown__list 
+                                        .button 
+                                            svg.button__img( width="12px" height="12px")
+                                                path(fill-rule="evenodd"  fill="rgb(136, 136, 136)" d="M11.765,3.443 C11.721,3.585 11.573,3.663 11.435,3.618 L10.172,3.200 C10.336,3.590 10.454,4.000 10.523,4.420 C10.724,5.635 10.507,6.891 9.912,7.958 C9.864,8.045 9.775,8.094 9.684,8.094 C9.640,8.094 9.595,8.082 9.554,8.058 L8.947,7.699 C8.886,7.663 8.842,7.604 8.824,7.535 C8.806,7.465 8.815,7.392 8.850,7.329 C9.303,6.516 9.468,5.558 9.316,4.632 C9.267,4.338 9.190,4.057 9.084,3.788 L8.684,5.076 C8.662,5.144 8.616,5.201 8.554,5.234 C8.516,5.253 8.475,5.263 8.434,5.263 C8.407,5.263 8.380,5.259 8.353,5.250 L7.687,5.031 C7.549,4.985 7.473,4.833 7.517,4.690 L8.479,1.600 C8.523,1.458 8.671,1.379 8.809,1.425 L11.809,2.415 C11.875,2.437 11.930,2.486 11.962,2.549 C11.994,2.613 12.000,2.687 11.979,2.756 L11.765,3.443 ZM5.022,11.912 C4.975,11.965 4.909,11.996 4.840,12.000 C4.836,12.000 4.832,12.000 4.828,12.000 C4.763,12.000 4.699,11.974 4.651,11.929 L4.134,11.442 C4.027,11.341 4.020,11.170 4.118,11.060 L5.013,10.052 C4.599,10.042 4.188,9.982 3.790,9.872 C2.635,9.552 1.618,8.824 0.925,7.823 C0.884,7.764 0.868,7.692 0.880,7.621 C0.891,7.550 0.930,7.487 0.986,7.445 L1.557,7.027 C1.675,6.940 1.839,6.969 1.923,7.090 C2.451,7.854 3.227,8.409 4.108,8.653 C4.385,8.729 4.667,8.775 4.949,8.788 L3.980,7.876 C3.873,7.775 3.866,7.604 3.963,7.494 L4.436,6.961 C4.483,6.908 4.548,6.877 4.618,6.874 C4.688,6.870 4.755,6.896 4.807,6.944 L7.132,9.135 C7.238,9.236 7.246,9.407 7.148,9.517 L5.022,11.912 ZM5.813,1.192 C5.762,1.241 5.694,1.267 5.624,1.264 C5.577,1.263 5.530,1.262 5.483,1.262 C4.623,1.262 3.774,1.558 3.091,2.098 C2.861,2.278 2.655,2.480 2.474,2.702 L3.766,2.467 C3.909,2.440 4.045,2.539 4.070,2.686 L4.192,3.396 C4.217,3.543 4.122,3.683 3.979,3.709 L0.877,4.274 C0.862,4.276 0.847,4.278 0.831,4.278 C0.778,4.278 0.725,4.261 0.681,4.229 C0.624,4.188 0.585,4.125 0.573,4.054 L0.025,0.858 C-0.000,0.711 0.095,0.571 0.238,0.545 L0.927,0.420 C1.070,0.394 1.206,0.492 1.232,0.639 L1.462,1.984 C1.721,1.653 2.018,1.354 2.346,1.095 C3.242,0.389 4.357,-0.000 5.485,-0.000 C5.546,-0.000 5.608,0.001 5.669,0.003 C5.738,0.006 5.804,0.037 5.852,0.089 C5.899,0.142 5.924,0.211 5.922,0.283 L5.896,1.004 C5.894,1.076 5.864,1.144 5.813,1.192 Z")
+                                            .button__title Share
+                                        .button 
+                                            svg.button__img( width="12px" height="12px")
+                                                path(fill-rule="evenodd"  fill="rgb(136, 136, 136)" d="M11.309,7.028 C10.927,7.028 10.618,7.329 10.618,7.701 L10.618,10.654 L1.382,10.654 L1.382,7.701 C1.382,7.329 1.073,7.028 0.691,7.028 C0.309,7.028 -0.000,7.329 -0.000,7.701 L-0.000,11.327 C-0.000,11.699 0.309,12.000 0.691,12.000 L11.309,12.000 C11.691,12.000 12.000,11.699 12.000,11.327 L12.000,7.701 C12.000,7.329 11.691,7.028 11.309,7.028 L11.309,7.028 ZM5.511,8.545 C5.641,8.671 5.817,8.742 6.000,8.742 C6.183,8.742 6.359,8.672 6.489,8.545 L9.275,5.833 C9.545,5.570 9.545,5.144 9.275,4.882 C9.006,4.619 8.568,4.619 8.298,4.882 L6.691,6.446 L6.691,0.672 C6.691,0.301 6.382,-0.000 6.000,-0.000 C5.618,-0.000 5.309,0.301 5.309,0.672 L5.309,6.446 L3.702,4.882 C3.432,4.619 2.994,4.619 2.725,4.882 C2.455,5.145 2.455,5.570 2.725,5.833 L5.511,8.545 Z")
+                                            .button__title Download as .zip
+                                        .button 
+                                            svg.button__img( width="12px" height="12px")
+                                                path(fill-rule="evenodd"  fill="rgb(136, 136, 136)" d="M6.000,-0.000 C2.700,-0.000 -0.000,2.700 -0.000,6.000 C-0.000,9.300 2.700,12.000 6.000,12.000 C9.300,12.000 12.000,9.300 12.000,6.000 C12.000,2.700 9.300,-0.000 6.000,-0.000 ZM1.200,6.000 C1.200,3.360 3.360,1.200 6.000,1.200 C7.080,1.200 8.100,1.560 8.940,2.220 L2.220,8.940 C1.560,8.100 1.200,7.080 1.200,6.000 ZM6.000,10.800 C4.920,10.800 3.900,10.440 3.060,9.780 L9.780,3.060 C10.440,3.900 10.800,4.920 10.800,6.000 C10.800,8.640 8.640,10.800 6.000,10.800 Z")
+                                            .button__title Delete
+
+            
+            .modal(id="modal__new-folder")
+                .modal__window
+                    span.modal__button-close &times;
+                    .modal__title New Folder
+                    .modal__content
+                        input.input(placeholder="New Folder")
+                    .modal__footer
+                        .modal__button-cancel Отмена
+                        .modal__button-submit Добавить
+
+            .modal(id="modal__settings")
+                .modal__window
+                    span.modal__button-close &times;
+                    .modal__title Settings
+                    .modal__content
+
+                    .modal__footer
+                        .modal__button-cancel Отмена
+                        .modal__button-submit Сохранить
+
+            .modal(id="modal__notifications")
+                .modal__window
+                    span.modal__button-close &times;
+                    .modal__title Notifications
+                    .modal__content
+                        .modal__subtitle New files
+                        .files-view.files-view_type_list
+                            .file 
+                                .file__img
+                                    img(src="img/files/3.png", alt="")
+                                .file__description
+                                    .file__name dropbox logo.jpg
+                                    span.file__date Jul 22 
+                                        | , 
+                                        span.file__size 110.2 KB
+                            .file 
+                                .file__img
+                                    img(src="img/files/1.png", alt="")
+                                .file__description
+                                    .file__name dropbox logo.jpg
+                                    span.file__date Jul 22 
+                                        | , 
+                                        span.file__size 110.2 KB

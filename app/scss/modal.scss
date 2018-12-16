@@ -1,0 +1,71 @@
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 999;
+
+    &__window {
+        position: relative;
+        width: 400px;
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 5px;
+        color: #505155;
+    }   
+
+    &__button-close {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        color: #aaaaaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 16px;
+        color: #c8c8c8;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+        margin-left: 14px;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    &__button {
+        width: 100px;
+        height: 40px;
+        padding: 0 10px 0 10px;
+        line-height: 40px;
+        color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 10px 0 0 5px ;
+        &:hover {
+            background-color: #007ce8dc;
+        }
+
+    }
+    &__button-submit {
+        @extend .modal__button;
+        background-color: #007be8;
+    }
+    &__button-cancel {
+        @extend .modal__button;
+        background-color: #9b9b9b;
+    }
+}

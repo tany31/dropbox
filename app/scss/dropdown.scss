@@ -1,0 +1,35 @@
+.dropdown {
+
+    
+    border-radius: 3px 3px 0 0;
+    padding: 0 5px;
+    width: 40px;
+    height: 22px;
+    text-align: center;
+    &:hover {
+        background-color: #ededed;
+        .dropdown__list {
+            display: block;
+        }
+    }
+    &__list {
+        position: absolute;
+        left: 0;
+        background-color: #ededed;
+        border-radius: 0 3px 3px 3px;
+        display: none;
+        min-width: 200px;
+        z-index: 3;
+        .button {
+            &:hover {
+                background-color: rgba(94, 94, 94, 0.11);
+            }
+            margin: 0;
+            padding: 10px;
+            padding-right: 30px;
+            &__title {
+                color: #505155;
+            }
+        }
+    }
+}

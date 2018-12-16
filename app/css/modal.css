@@ -1,0 +1,90 @@
+.modal {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.modal__window {
+  position: relative;
+  width: 400px;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 5px;
+  color: #505155;
+}
+
+.modal__button-close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-size: 16px;
+  color: #c8c8c8;
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+.modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.modal__button, .modal__button-submit, .modal__button-cancel {
+  width: 100px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  line-height: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 10px 0 0 5px;
+}
+
+.modal__button:hover, .modal__button-submit:hover, .modal__button-cancel:hover {
+  background-color: #007ce8dc;
+}
+
+.modal__button-submit {
+  background-color: #007be8;
+}
+
+.modal__button-cancel {
+  background-color: #9b9b9b;
+}

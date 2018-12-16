@@ -1,0 +1,28 @@
+.section__header {
+  font-size: 12px;
+  color: #c8c8c8;
+  padding-left: 20px;
+}
+
+.section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  padding: 10px 0 0 0;
+}
+
+.section__item {
+  padding-left: 30px;
+}
+
+.section .button__title {
+  color: #8a8a8a;
+}
+
+.section .button__img {
+  width: 16px;
+}

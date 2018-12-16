@@ -1,0 +1,25 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+.button__title {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.button__subtitle {
+  font-size: 12px;
+  color: #747576;
+}

@@ -1,0 +1,80 @@
+.files-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 30px -15px 15px -15px;
+}
+
+.files-view_type_detail .file, .files-view_type_list .file {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.files-view_type_detail .file__description, .files-view_type_list .file__description {
+  padding-left: 15px;
+}
+
+.files-view_type_detail .file__text, .files-view_type_list .file__text {
+  display: block;
+}
+
+.files-view_type_detail .file__dropdown, .files-view_type_list .file__dropdown {
+  top: 0;
+}
+
+.files-view_type_detail .file__dropdown .dropdown__list, .files-view_type_list .file__dropdown .dropdown__list {
+  left: -300%;
+  text-align: right;
+}
+
+.files-view_type_detail .file__dropdown .button, .files-view_type_list .file__dropdown .button {
+  text-align: right;
+}
+
+.files-view_type_list .file {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.files-view_type_list .file__img img {
+  width: 55px;
+  height: 45px;
+}
+
+.files-view_type_list .file__upload-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.files-view_type_list .file__selected-icon {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.files-view_type_list .file__selected-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.files-view_type_list .file__text {
+  display: none;
+}

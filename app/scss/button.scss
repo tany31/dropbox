@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    flex-flow: row nowrap;   
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    &__title {
+        font-size: 14px;
+        color: #ffffff;
+        margin-left: 12px;
+    }
+    &__subtitle {
+        font-size: 12px;
+        color: #747576;
+    }
+  }

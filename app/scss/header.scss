@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: #3f4044;    
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 220px;
+        max-width: 220px;
+        align-self: stretch;
+        background-color: #007be8;
+    }
+
+    &__inner {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 40px 20px 25px;
+    }
+    
+    &__nav {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        height: 100%;
+    }
+    .button {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.11);
+        }
+    }
+}

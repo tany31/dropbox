@@ -1,0 +1,19 @@
+.file-view-controls {
+    display: flex;
+    align-self: center;
+    margin-right: 30px;
+    .button:not(:last-child) {
+        margin-right: 15px;
+    }
+    .button:hover path{
+        fill: #007be8;
+    }
+    &__button {
+        &_active {
+            path{
+                fill: #007be8;
+            }
+        }
+    }
+
+}
